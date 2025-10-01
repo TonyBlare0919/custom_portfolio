@@ -1,5 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
 
+/**
+ * Custom hook to track which section of the page is currently visible
+ * @param sectionIds - array of section IDs to watch, e.g. ["about", "experience", "projects", "contact"]
+ * @returns { activeSection, setActiveManually }
+ *   - activeSection: the ID of the section currently most visible
+ *   - setActiveManually: function to override active section manually (e.g. when clicking a nav link)
+ */
+
 const useActiveSection = (sectionIds: string[]) => {
   const [activeSection, setActiveSection] = useState<string>(
     sectionIds[0] || ""

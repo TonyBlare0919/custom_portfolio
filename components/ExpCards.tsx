@@ -117,11 +117,11 @@ export default function ExpCard() {
         {jobPositions.map((job, index) => (
           <Card
             key={index}
-            className="lg:p-6 mb-4 flex flex-col lg:flex-row  w-full min-h-fit gap-0 border-transparent hover:border dark:lg:hover:border-t-blue-900 dark:lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:hover:bg-slate-100/50 lg:hover:border-t-blue-200"
+            className="lg:p-6 mb-4 flex flex-col lg:flex-row w-full min-h-fit gap-2 border-transparent hover:border dark:lg:hover:border-t-blue-900 dark:lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:hover:bg-slate-100/50 lg:hover:border-t-blue-200"
           >
             <div className=" lg:w-[35%] sm:w-full ">
               <CardHeader className="h-full w-full p-0 text-right">
-                <CardTitle className="text-base text-slate-400 tracking-wide whitespace-nowrap text-right pr-6">
+                <CardTitle className="text-base text-slate-400 tracking-wide whitespace-nowrap text-left pr-6">
                   {job.timeline}
                 </CardTitle>
               </CardHeader>
