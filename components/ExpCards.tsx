@@ -87,21 +87,19 @@ const jobPositions = [
     ],
   },
   {
-    timeline: "Nov 2013 - May 2014",
-    currentPosition: "Digital Systems Admin - Internship",
-    place: "OTE Group (HTO)",
+    timeline: "Jul 2017 - Feb 2020",
+    currentPosition: "Full Stack Developer",
+    place: "EPAM Systems",
     previousPositions: [""],
     description:
-      "Gained valuable experience in digital systems administration, focusing on the management of contractors and capital.",
+      "Developed enterprise e-commerce platforms with React.js, Redux, and Django, serving over 1M monthly active users.",
     skills: [
-      "SQL",
-      "Administration",
-      "Problem-Solving",
+      "Django",
+      "React",
+      "PostgreSQL",
       "Computer Systems",
       "System documentation",
       "Networking",
-      "Cloud Computing",
-      "Automation",
       "Scripting",
     ],
   },
@@ -119,31 +117,35 @@ export default function ExpCard() {
         {jobPositions.map((job, index) => (
           <Card
             key={index}
-            className="lg:p-6 mb-4 flex flex-col lg:flex-row w-full min-h-fit gap-0 lg:gap-5 border-transparent hover:border dark:lg:hover:border-t-blue-900 dark:lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:hover:bg-slate-100/50 lg:hover:border-t-blue-200"
+            className="lg:p-6 mb-4 flex flex-col lg:flex-row  w-full min-h-fit gap-0 border-transparent hover:border dark:lg:hover:border-t-blue-900 dark:lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:hover:bg-slate-100/50 lg:hover:border-t-blue-200"
           >
-            <CardHeader className="h-full w-full p-0">
-              <CardTitle className="text-base text-slate-400 whitespace-nowrap">
-                {job.timeline}
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="flex flex-col p-0">
-              <p className="text-foreground font-bold">
-                {job.currentPosition} • {job.place}
-              </p>
-              {job.previousPositions.map((position, index) => (
-                <p key={index} className="text-slate-400 text-sm font-bold">
-                  {position}
+            <div className=" lg:w-[35%] sm:w-full ">
+              <CardHeader className="h-full w-full p-0 text-right">
+                <CardTitle className="text-base text-slate-400 tracking-wide whitespace-nowrap text-right pr-6">
+                  {job.timeline}
+                </CardTitle>
+              </CardHeader>
+            </div>
+            <div className=" lg:w-[65%] sm:w-full ">
+              <CardContent className="flex flex-col p-0">
+                <p className="text-foreground font-bold">
+                  {job.currentPosition} • {job.place}
                 </p>
-              ))}
-              <CardDescription className="py-3 text-muted-foreground">
-                {job.description}
-              </CardDescription>
-              <CardFooter className="p-0 flex flex-wrap gap-2">
-                {job.skills.map((skill, index) => (
-                  <Badge key={index}>{skill}</Badge>
+                {job.previousPositions.map((position, index) => (
+                  <p key={index} className="text-slate-400 text-sm font-bold">
+                    {position}
+                  </p>
                 ))}
-              </CardFooter>
-            </CardContent>
+                <CardDescription className="py-3 text-muted-foreground">
+                  {job.description}
+                </CardDescription>
+                <CardFooter className="p-0 flex flex-wrap gap-2">
+                  {job.skills.map((skill, index) => (
+                    <Badge key={index}>{skill}</Badge>
+                  ))}
+                </CardFooter>
+              </CardContent>
+            </div>
           </Card>
         ))}
       </>

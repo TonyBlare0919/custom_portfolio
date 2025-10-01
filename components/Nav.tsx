@@ -11,7 +11,7 @@ type NavItem = {
 };
 
 export default function Nav() {
-  const activeSection = useActiveSection([
+  const { activeSection, setActiveManually } = useActiveSection([
     "about",
     "experience",
     "projects",
@@ -26,7 +26,10 @@ export default function Nav() {
   ];
 
   const getNavItemClasses = (href: string) => {
-    const isActive = activeSection === href.substring(1);
+    const isActive =
+      activeSection?.toLowerCase() === href.substring(1).toLowerCase();
+    console.log(new Date());
+    console.log(activeSection);
     return {
       linkClass: isActive ? "active" : "",
       indicatorClass: `nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all ${
@@ -47,14 +50,14 @@ export default function Nav() {
       <div className="flex flex-col gap-4 lg:pr-24 mt-6 lg:mt-0">
         <div className="w-full flex lg:items-center lg:justify-start">
           <Avatar className="w-24 lg:w-36 h-auto border-2 border-primary bg-secondary">
-            <AvatarImage src="./avatar.png" />
-            <AvatarFallback className="w-24 h-24 lg:w-36 lg:h-36 rounded-full border-1 border-primary">
+            <AvatarImage src="/avatar.png" />
+            <AvatarFallback className="w-24 h-24 lg:w-36 lg:h-36 rounded-full border border-primary">
               AM
             </AvatarFallback>
           </Avatar>
         </div>
         <h1 className="text-[42px] font-bold lg:text-start">
-          Hi, i&#39;m Alexander 👋
+          Hi, i&#39;m Andrill 👋
         </h1>
         <h2 className="text-xl lg:text-start">
           Product designer, developer, founder.
@@ -73,7 +76,11 @@ export default function Nav() {
             );
             return (
               <li key={item.name} className="group">
-                <a href={item.href} className={`py-3 ${linkClass}`}>
+                <a
+                  href={item.href}
+                  className={`py-3 ${linkClass}`}
+                  onClick={() => setActiveManually(item.href.substring(1))}
+                >
                   <span className={indicatorClass}></span>
                   <span className={textClass}>{item.name}</span>
                 </a>
