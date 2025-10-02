@@ -12,78 +12,58 @@ import { MoveRight } from "lucide-react";
 
 const jobPositions = [
   {
-    timeline: "Aug 2024 — Present",
-    currentPosition: "Founding Designer & Head of Product Design",
-    place: "Stealth AI Startup",
+    timeline: "Jun 2025 — Present",
+    currentPosition: "AI & Full Stack Engineer",
+    place: "Freelance",
     previousPositions: [""],
     description:
-      "Establishing and leading the design team for a Stealth AI Startup set to bring the New Era of Money. My role involves founding and leading the design team, setting the vision and standards for design excellence, direct branding and actively contributing to hands-on product design for going to market.",
+      "I currently help startups and SMEs bring their ideas to life by building AI-powered applications and full-stack platforms.",
     skills: [
-      "Brand Identity",
-      "Product Design",
-      "UI/UX Design",
-      "Design Systems",
-      "Design Strategy",
-      "Team Leadership",
+      "AI powered Applications",
+      "Flexible Working Time",
+      "Startups",
+      "FastAPI",
+      "Python",
     ],
   },
   {
-    timeline: "Mar 2024 — Present",
-    currentPosition: "Head of Product Design",
-    place: "Vela Exchange",
-    previousPositions: ["Designer and Front-end Developer"],
-    description:
-      "Leading the design team for Vela Exchange, a community-first, decentralized perpetuals trading platform. My role involves setting the vision and standards for design excellence, and actively contributing to hands-on product design.",
-    skills: [
-      "Product Design",
-      "UI/UX Design",
-      "Design Systems",
-      "Design Strategy",
-      "Team Leadership",
-    ],
-  },
-  {
-    timeline: "Feb 2022 — Presents",
-    currentPosition: "Co-founder, Designer & Developer",
-    place: "Swoop Exchange",
+    timeline: "Feb 2022 — May 2025",
+    currentPosition: "AI & Full Stack Engineer",
+    place: "Luxoft",
     previousPositions: [""],
     description:
-      "Co-founded, designed, and developed a Next-Gen Decentralized Exchange from MVP to launch, scaling from zero to over $10M in trading volume. Swoop Exchange is powered by a novel Meta-Aggregation Engine that leverages sophisticated routing algorithms and APIs to automatically route trades from the most profitable liquidity sources, vastly improving swap efficiency and user experience.",
+      "I worked on fintech and telecom projects, where performance and security were critical. I led the development of an AI-driven fraud detection dashboard that achieved 92% accuracy and saved the client millions in potential losses. I also improved scalability by 40% through microservices architecture with FastAPI and Django. This role gave me strong expertise in cloud deployment, hybrid team collaboration, and enterprise AI systems.",
     skills: [
-      "Typescript",
-      "JavaScript",
-      "CSS",
-      "Tailwind CSS",
-      "MUI",
-      "HTML",
-      "Figma",
-      "UI/UX Design",
-      "Blockchain tech",
+      "AI Integration",
+      "Machine Learning",
+      "Fintech",
+      "FastAPI",
+      "Saas Platform",
+      "Scalability",
+      "ChatBot",
       "Project Management",
-      "Planning",
+      "Fraud Detection",
       "Leadership",
       "Testing & QA",
     ],
   },
   {
-    timeline: "Aug 2016 — Mar 2024",
-    currentPosition: "Head of QA",
-    place: "Lykomitros Steel",
-    previousPositions: [
-      "Quality Assurance Engineer",
-      "QA/QC Administrative Support",
-    ],
+    timeline: "Mar 2020 — Dec 2021",
+    currentPosition: "Full Stack Engineer",
+    place: "SoftServe",
+    previousPositions: [],
     description:
-      "Lead the QA department, focusing on renewable energy components in steel manufacturing. Maintained industry and client standards, ensuring product integrity for renewable energy.",
+      "I delivered enterprise healthcare and retail platforms that required both speed and precision. One project was a healthcare analytics system that processed patient records 30% faster by using React.js, Next.js, and optimized APIs. I also migrated legacy applications to cloud-native microservices, reducing infrastructure costs by 25%. My work here centered on Python, API integration, data pipelines, and full-stack web development.",
     skills: [
-      "ISO Compliance",
-      "Quality Assurance",
-      "Engineering Management",
-      "ISO 9001",
-      "ISO 45001",
-      "ISO 14001",
-      "Requirement Assessment",
-      "Auditing",
+      "Healthcare",
+      "Project Management",
+      "Next.js",
+      "API Integration",
+      "Cloud-Native",
+      "Microservices",
+      "Python",
+      "Flask",
+      "Enterprise Platforms",
     ],
   },
   {
@@ -92,15 +72,18 @@ const jobPositions = [
     place: "EPAM Systems",
     previousPositions: [""],
     description:
-      "Developed enterprise e-commerce platforms with React.js, Redux, and Django, serving over 1M monthly active users.",
+      "I started my career with Python and React.I contributed to large-scale e-commerce and financial applications used by over a million users. I built responsive interfaces with React.js and Redux, backed by robust Django APIs. By optimizing PostgreSQL queries and backend logic, I reduced page load times by 35%. My work on CI/CD pipelines also streamlined deployments, reducing release times from days to hours. This was my foundation in enterprise-grade development and global project delivery.",
     skills: [
-      "Django",
-      "React",
+      "e-commerce",
+      "Python",
+      "React.js",
+      "Redux",
+      "Tailwind CSS",
       "PostgreSQL",
-      "Computer Systems",
-      "System documentation",
-      "Networking",
-      "Scripting",
+      "enterprise software",
+      "CI/CD",
+      "Performance Optimization",
+      "Testing & QA",
     ],
   },
 ];
@@ -117,7 +100,7 @@ export default function ExpCard() {
         {jobPositions.map((job, index) => (
           <Card
             key={index}
-            className="lg:p-6 mb-4 flex flex-col lg:flex-row w-full min-h-fit gap-2 border-transparent hover:border dark:lg:hover:border-t-blue-900 dark:lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:hover:bg-slate-100/50 lg:hover:border-t-blue-200"
+            className="lg:p-6 mb-4 flex flex-col  lg:flex-row w-full min-h-fit gap-2 border-transparent hover:border dark:lg:hover:border-t-blue-900 dark:lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:hover:bg-slate-100/50 lg:hover:border-t-blue-200"
           >
             <div className=" lg:w-[35%] sm:w-full ">
               <CardHeader className="h-full w-full p-0 text-right">

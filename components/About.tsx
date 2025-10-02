@@ -11,45 +11,25 @@ export default function About() {
       </div>
       <div className="flex flex-col gap-4">
         <p className="text-start text-muted-foreground lg:px-6">
-          Throughout my journey from coding to design, I've been guided by a
-          simple belief:{" "}
-          <span className="text-white">
-            technology should feel natural and intuitive.
-          </span>{" "}
-          At the crossroads of AI, Web3, and Finance, I focus on creating user
-          experiences that make complex ideas accessible.
-        </p>
-        <p className="text-start  text-muted-foreground lg:px-6">
-          Currently, I'm leading product design at a stealth AI startup that's
-          rethinking how we interact with money. I'm also steering the design
-          team at{" "}
-          <a
-            className="no-wrap text-primary dark:text-white"
-            href="https://vela.exchange"
-            target="blank"
-            rel="noopener noreferrer"
-          >
-            Vela Exchange
-          </a>
-          , a decentralized platform for perpetual trading. As a co-founder,
-          designer, and developer at{" "}
-          <a
-            className="no-wrap text-primary dark:text-white"
-            href="https://swoop.exchange"
-            target="blank"
-            rel="noopener noreferrer"
-          >
-            Swoop Exchange
-          </a>
-          , I've helped build a meta-aggregation engine used daily by thousands
-          of users.
+          Creative and innovative{" "}
+          <span className="text-white">AI & Full Stack Engineer</span> with 7+
+          years of experience building everything from{" "}
+          <span className="text-white">AI-driven fraud detection systems</span>
+          to{" "}
+          <span className="text-white">high-performance web applications</span>.
         </p>
         <p className="text-start text-muted-foreground lg:px-6">
-          Across all the applications I've been involved with, I've had the
-          privilege to contribute in facilitating billions in transaction
-          volume. I believe in making technology feel human—designing
-          applications and experiences that are seamless extensions of
-          ourselves, serving real needs with simplicity and clarity.
+          Skilled in Python, Django, FastAPI, React, Next.js, and Redux, I love
+          solving complex problems with simple, elegant solutions (and
+          occasionally <span className="text-white">too much coffee</span> ☕) .
+        </p>
+        <p className="text-start text-muted-foreground lg:px-6">
+          Known for improving performance, streamlining systems, and turning
+          ambitious ideas into production-ready software, I see myself not just
+          as a developer but as a{" "}
+          <span className="text-white">partner who grows with the company</span>
+          . Always curious, always learning, and never afraid to try something
+          new if it means pushing the boundaries of what’s possible.
         </p>
       </div>
     </section>
