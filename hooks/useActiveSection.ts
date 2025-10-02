@@ -18,18 +18,21 @@ const useActiveSection = (sectionIds: string[]) => {
       (entries) => {
         let mostVisible: IntersectionObserverEntry | null = null;
 
-        entries.forEach((entry) => {
+        entries.forEach((entry: IntersectionObserverEntry) => {
           if (entry.isIntersecting) {
             if (
               !mostVisible ||
-              entry.intersectionRatio > mostVisible.intersectionRatio
+              entry.intersectionRatio >
+                (mostVisible as IntersectionObserverEntry).intersectionRatio
             ) {
               mostVisible = entry;
             }
           }
         });
         if (mostVisible) {
-          setActiveSection(mostVisible.target.id);
+          const element = (mostVisible as IntersectionObserverEntry)
+            .target as HTMLElement;
+          setActiveSection(element.id);
         }
       },
       { threshold: [0.3, 0.5, 0.7] }
