@@ -7,23 +7,21 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://meikopoulos.com"),
+  metadataBase: new URL("https://kartashev.netlify.app/"),
   alternates: {
-    canonical: "https://meikopoulos.com",
+    canonical: "https://kartashev.netlify.app/",
   },
-  title: "Alexander Meikopoulos - Product Designer in AI, Web3, and Finance",
-  description:
-    "Alexander Meikopoulos is a Product designer, developer & founder.",
+  title: "Andrill Kartashev - AI Full Stack Engineer",
+  description: "Andrill Kartashev is an  AI Full Stack Engineer.",
   keywords:
-    "Alexander Meikopoulos, Product Designer, AI, Web3, Finance, User Experience, UI/UX Design, Design Systems, Front-end Development, Decentralized Finance, DeFi, Swoop Exchange, Vela Exchange, Stealth AI Startup, Technology, Innovation, Human-Centered Design",
+    "Andrill Kartashev, Product Designer, AI, Web3, Finance, User Experience, UI/UX Design, Design Systems, Front-end Development, Decentralized Finance, DeFi, Swoop Exchange, Vela Exchange, Stealth AI Startup, Technology, Innovation, Human-Centered Design",
   openGraph: {
     locale: "en_US",
-    siteName: "Alexander Meikopoulos",
+    siteName: "Andrill Kartashev",
     type: "website",
-    title: "Alexander Meikopoulos",
-    description:
-      "Alexander Meikopoulos is a Product designer, developer & founder.",
-    url: "https://meikopoulos.com",
+    title: "Andrill Kartashev",
+    description: "Andrill Kartashev is an  AI Full Stack Engineer.",
+    url: "https://kartashev.netlify.app/",
     images: [
       {
         url: "./og-large-meik-2.jpg",
@@ -32,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alexander Meikopoulos",
+    title: "Andrill Kartashev",
   },
 };
 
