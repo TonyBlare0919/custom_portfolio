@@ -90,7 +90,7 @@ export default function Nav() {
       <ul className="flex flex-row gap-6 mt-6 lg:mt-0">
         <Button variant="outline" size="icon">
           <a
-            href="https://github.com/0xAlexander"
+            href="https://github.com/LegendaryCoder0205"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -99,7 +99,7 @@ export default function Nav() {
         </Button>
         <Button variant="outline" size="icon">
           <a
-            href="https://linkedin.com/in/0xAlexander"
+            href="https://www.linkedin.com/in/andrii-kartashev"
             target="_blank"
             rel="noopener noreferrer"
           >
