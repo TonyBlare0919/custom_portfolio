@@ -97,7 +97,7 @@ export default function Nav() {
             <Github className="h-[1.2rem] w-[1.2rem]" />
           </a>
         </Button>
-        <Button variant="outline" size="icon">
+        {/* <Button variant="outline" size="icon">
           <a
             href="https://www.linkedin.com/in/andrii-kartashev"
             target="_blank"
@@ -105,7 +105,7 @@ export default function Nav() {
           >
             <Linkedin className="h-[1.2rem] w-[1.2rem]" />
           </a>
-        </Button>
+        </Button> */}
         <ModeToggle />
       </ul>
     </header>
